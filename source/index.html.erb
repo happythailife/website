@@ -2,11 +2,10 @@
 title: Happy Thai
 layout: "page"
 ---
-<div class="splash-container">
+<div class="splash-container" style="background: url(/images/chiang-mai.jpg) no-repeat center center fixed; background-size: cover;">
   <div class="splash">
     <h1 class="splash-head">Online Thai Lessons</h1>
     <p class="splash-subhead">Learn Thai online with your Thai teacher Mam</p>
-    <p><a href="/lessons" class="pure-button pure-button-primary">Get Started</a></p>
   </div>
 </div>
 
@@ -16,25 +15,99 @@ layout: "page"
     <div class="pure-g">
       <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
         <h3 class="content-subhead">
-          <i class="fa fa-rocket"></i>
+          <i class="fa fa-user"></i>
           Private lessons
         </h3>
-        <p>1 on 1 lessons are the perfect way to improve your Thai language. Take a look at my <%= link_to 'lessons', '/lessons' %> page to learn more.</p>
+        <p>1 on 1 lessons are the perfect way to improve your Thai language. Take a look at my <%= link_to 'lessons', '/lessons.html' %> page to learn more.</p>
       </div>
       <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
         <h3 class="content-subhead">
-          <i class="fa fa-th-large"></i>
+          <i class="fa fa-users"></i>
+          Group classes
+        </h3>
+        <p>I've taught hundreds of hours of group classes for students from all around the world.</p>
+      </div>
+      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+        <h3 class="content-subhead">
+          <i class="fa fa-comments"></i>
           Translation services
         </h3>
         <p>If you have an English or Thai document you need translated I can get it done quickly and professionally.</p>
       </div>
-      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-        <h3 class="content-subhead">
-          <i class="fa fa-th-large"></i>
-          Group classes
-        </h3>
-        <p>I've taught hundreds of hours of group classes for students from all around the world. For enquires about prices and availability send me a message on the <%= link_to 'contact', '/contact' %> page.</p>
-      </div>
     </div>
+  </div>
+
+  <div class="ribbon l-box-lrg pure-g">
+    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+      <i class="fa fa-user" style="font-size: 120px;"></i>
+    </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <h2 class="content-head content-head-ribbon">Private Lessons</h2>
+        <p>
+          Having private lessons with me is the absolute best way to learn and improve your Thai language skills. If you are in Chiang Mai you can take lessons in person but online lessons are just as good from any where in the world.
+        </p>
+      </div>
+  </div>
+
+  <div class="xribbon l-box-lrg pure-g">
+    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+      <i class="fa fa-users" style="font-size: 120px;"></i>
+    </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <h2 class="content-head">Group Classes</h2>
+        <p>
+          I have been running groups classes for more than 8 years for students all around the world. Whether you are interested in learning Thai for business, personal or other reasons then I can taylor my lessons to your needs.
+        </p>
+      </div>
+  </div>
+
+  <div class="ribbon l-box-lrg pure-g" style="padding-bottom: 120px;">
+    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+      <i class="fa fa-comments" style="font-size: 120px;"></i>
+    </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <h2 class="content-head content-head-ribbon">Translation Services</h2>
+        <p>
+          I've done countless hours of translations for businesses both within Thailand and internationaly, all of my translations are reviewed by a native English speaker so you are sure to receive the highest quality work.
+        </p>
+      </div>
+  </div>
+
+  <div class="pure-g content">
+      <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+        <form class="pure-form pure-form-stacked" data-netlify="true" name="contact">
+          <fieldset>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" style="width:100%;"></textarea>
+
+            <button type="submit" class="pure-button">Send</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+        <h4>Contact Mam</h4>
+        <p>If you have any questions about availability or pricing please don't hesitate to contact me using the form on this page or any of the social media platforms listed below.
+        </p>
+
+        <h4>Social Media</h4>
+        <div class="social-links">
+          <% link_to 'https://twitter.com/happythailife' do %>
+            <i class="fa fa-twitter-square"></i>
+          <% end %>
+          <% link_to 'https://www.facebook.com' do %>
+            <i class="fa fa-facebook-square"></i>
+          <% end %>
+          <% link_to 'https://www.instagram.com' do %>
+            <i class="fa fa-instagram"></i>
+          <% end %>
+        </div>
+      </div>
   </div>
 </div>
