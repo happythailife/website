@@ -23,5 +23,19 @@
   </div>
 </div>
   <%= yield %>
+  <div class="footer l-box is-center">
+    <div class="social-links">
+      <% link_to 'https://twitter.com/happythailife' do %>
+        <i class="fa fa-twitter-square"></i>
+      <% end %>
+      <% link_to 'https://www.facebook.com' do %>
+        <i class="fa fa-facebook-square"></i>
+      <% end %>
+      <% link_to 'https://www.instagram.com' do %>
+        <i class="fa fa-instagram"></i>
+      <% end %>
+    </div>
+    <p style="margin: 0;">© <%= Time.now.year %> happythai.life</p>
+  </div>
 </body>
 </html>
