@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+#publish_mode: editorial_workflow #optional, enables publishing workflow
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - file: "data/pages/home.yml"
+        label: Homepage
+        name: home
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Image, name: image, widget: image}
+          - label: Story
+            name: story
+            widget: markdown
