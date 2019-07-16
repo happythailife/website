@@ -232,6 +232,69 @@ a.pure-button-primary {
     color: #aaa;
 }
 
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    color: #444;
+    line-height: 1.8em;
+}
+.post-description img {
+    width: 100%;
+    border-radius: 5px;
+}
+.post-description p:first-child {
+    margin-top: 0;
+}
+.post-description p {
+    padding-left: 2em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0 0 1em 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
 /* This is the class used for the footer */
 .footer {
     background: #111;

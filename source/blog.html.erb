@@ -11,12 +11,25 @@ layout: "page"
 <div class="content-wrapper small-content-wrapper">
   <div class="content">
     <% blog.articles.each do |article| %>
-      <article>
-        <h2><%= article.title %></h2>
-        <%= article.data.thumbnail %>
-        <%= article.data.description %>
-        <%= link_to 'Read more', article %>
-      </article>
+      <section class="post">
+        <header class="post-header">
+          <h2 class="post-title"><%= article.title %></h2>
+          <p class="post-meta">
+            <%= article.data.date.strftime('%e %B %Y') %> by Kru Mam
+          </p>
+        </header>
+        <div class="post-description pure-g">
+          <div class="pure-u-1-5">
+            <% link_to article do %>
+              <img src="<%= article.data.thumbnail %>" />
+            <% end %>
+          </div>
+          <div class="pure-u-4-5">
+            <%= markdown article.data.description %>
+            <p><%= link_to 'Read more', article %></p>
+          </div>
+        </div>
+      </section>
     <% end %>
   </div>
 </div>  
