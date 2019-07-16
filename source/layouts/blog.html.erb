@@ -1,5 +1,17 @@
-<h1>
-  <%= current_page.data.title %>
-</h1>
+<% wrap_layout :layout do %>
+  <div class="splash-container small-splash-container">
+    <div class="splash">
+      <h1 class="splash-head">Happy Thai Blog</h1>
+    </div>
+  </div>
 
-<%= yield %>
+  <div class="content-wrapper small-content-wrapper">
+    <div class="content">
+      <h1><%= current_page.data.title %></h1>
+
+      <%= yield %>
+    </div>
+  </div>  
+
+<% end %>
+

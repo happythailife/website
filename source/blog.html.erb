@@ -1,13 +1,23 @@
 ---
-title: Happy Thai
+title: Happy Thai Blog
 layout: "page"
 ---
-<% blog.articles.each do | article | %>
-  <article>
-    <h2>
-      <%= article.title %>
-    </h2>
+<div class="splash-container small-splash-container">
+  <div class="splash">
+    <h1 class="splash-head">Happy Thai Blog</h1>
+  </div>
+</div>
 
-    <%= link_to 'Read more', article %>
-  </article>
-<% end %>
+<div class="content-wrapper small-content-wrapper">
+  <div class="content">
+    <% blog.articles.each do | article | %>
+      <article>
+        <h2>
+          <%= article.title %>
+        </h2>
+
+        <%= link_to 'Read more', article %>
+      </article>
+    <% end %>
+  </div>
+</div>  
