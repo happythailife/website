@@ -10,11 +10,11 @@ layout: "page"
 
 <div class="content-wrapper small-content-wrapper">
   <div class="content">
-    <% blog.articles.each do | article | %>
+    <% blog.articles.each do |article| %>
       <article>
         <h2><%= article.title %></h2>
-        <%= article.thumbnail %>
-        <%= article.description %>
+        <%= article.data.thumbnail %>
+        <%= article.data.description %>
         <%= link_to 'Read more', article %>
       </article>
     <% end %>
