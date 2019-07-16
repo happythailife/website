@@ -48,5 +48,5 @@
 activate :blog do | blog |
   blog.permalink = "blog/{title}.html"
   blog.sources = "posts/{title}.html"
-  blog.layout = "blog"
+  blog.layout = "page"
 end
