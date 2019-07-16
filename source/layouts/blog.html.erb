@@ -1,4 +1,4 @@
-<% wrap_layout :layout do %>
+<% wrap_layout :page do %>
   <div class="splash-container small-splash-container">
     <div class="splash">
       <h1 class="splash-head">Happy Thai Blog</h1>
@@ -8,10 +8,10 @@
   <div class="content-wrapper small-content-wrapper">
     <div class="content">
       <h1><%= current_page.data.title %></h1>
+      <p><%= current_page.data.date.strftime('%e %B %Y') %></p>
 
       <%= yield %>
     </div>
   </div>  
-
 <% end %>
 
