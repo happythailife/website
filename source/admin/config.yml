@@ -4,22 +4,15 @@ backend:
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
-#publish_mode: editorial_workflow #optional, enables publishing workflow
-
 collections:
-  - name: pages
-    label: Pages
-    files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
-        fields:
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
+  - name: blog
+    label: Blog
+    folder: source/posts/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Body, name: body, widget: markdown}

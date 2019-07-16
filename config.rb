@@ -44,3 +44,9 @@
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :blog do | blog |
+  blog.permalink = "blog/{title}.html"
+  blog.sources = "posts/{title}.html"
+  blog.layout = "blog"
+end
