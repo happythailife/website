@@ -71,7 +71,7 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #62b3a0;
+    background-color: #00A4B0;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
@@ -79,7 +79,7 @@ label {
 
 a.pure-button-primary {
     background: white;
-    color: #62b3a0;
+    color: #00A4B0;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -132,7 +132,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #62b3a0;
+    background: #00A4B0;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -211,7 +211,7 @@ a.pure-button-primary {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
-    color: #62b3a0;
+    color: #00A4B0;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -221,7 +221,7 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #62b3a0;
+    color: #00A4B0;
 }
     .content-subhead i {
         margin-right: 7px;
@@ -229,12 +229,12 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #ECAD95;
+    background: #265889;
     color: #fff;
 }
 
 .ribbon-alternate {
-    color: #62b3a0;
+    color: #00A4B0;
 }
 
 .post {
@@ -320,7 +320,7 @@ a.pure-button-primary {
 
 .social-links a {
     text-decoration: none;
-    color: #62b3a0;
+    color: #00A4B0;
 }
 
 /*
