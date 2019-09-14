@@ -98,6 +98,10 @@ a.pure-button-primary {
 .home-menu {
     background: rgba(0,0,0,0.2);
 }
+.home-menu .home-menu-content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
@@ -116,13 +120,13 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: white;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #eaeaea;
 }
 
 
