@@ -11,19 +11,21 @@
   <%= stylesheet_link_tag "marketing", "site" %>
 </head>
 <body>
-<div class="header">
-  <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-    <div class="home-menu-content">
-      <a class="pure-menu-heading" href="/">Happy Thai</a>
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item"><a href="/prices" class="pure-menu-link">Prices</a></li>
-        <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">Blog</a></li>
-      </ul>
+  <div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <div class="home-menu-content">
+        <a class="pure-menu-heading" href="/">Happy Thai</a>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+          <li class="pure-menu-item"><a href="/prices" class="pure-menu-link">Prices</a></li>
+          <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">Blog</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+
   <%= yield %>
+
   <div class="footer l-box is-center">
     <div class="social-links">
       <% link_to 'https://twitter.com/happythailife' do %>
