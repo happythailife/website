@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'middleman'
 gem 'middleman-autoprefixer'
 gem 'middleman-blog'
-# gem 'middleman-minify-html'
+gem 'middleman-minify-html'
 gem 'liquid'
 gem 'slim'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
