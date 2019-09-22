@@ -4,6 +4,7 @@ gem 'middleman'
 gem 'middleman-autoprefixer'
 gem 'middleman-blog'
 gem 'middleman-minify-html'
+gem 'builder'
 gem 'liquid'
 gem 'slim'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
