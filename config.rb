@@ -40,6 +40,9 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
+require 'tzinfo'
+Time.zone = 'Asia/Bangkok'
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
