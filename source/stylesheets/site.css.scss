@@ -12,7 +12,106 @@
   width: 10%;
 }
 
-#Certificate-banners img {
-  background: white;
-  border-radius: 5px;
+// Responsive Navigation
+.custom-wrapper {
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: height 0.5s;
+  background-color: rgba(0, 164, 176, 0.9);
+  height: 3.5em;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: height 0.5s;
+  z-index: 3;
+}
+
+.custom-wrapper .pure-menu-heading, .custom-wrapper .pure-menu-link {
+  color: white;
+  padding: 1em;
+}
+
+.custom-wrapper .pure-menu-link:hover {
+  background: none;
+  color: #275254;
+}
+
+.custom-wrapper .custom-wrapper-content {
+  width: 100%;
+}
+
+.custom-wrapper .custom-wrapper-inner-content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.custom-wrapper.open {
+  height: 15em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+  color: white;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: white;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+  .custom-menu-3 {
+      text-align: left;
+  }
+
+  .custom-toggle {
+      display: block;
+  }
+
+  .custom-wrapper .pure-menu-link {
+    padding: 0.5em 1em;
+  }
 }
