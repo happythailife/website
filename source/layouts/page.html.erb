@@ -34,22 +34,13 @@
     </div>
   </div>
 
-  <%# <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed custom-wrapper">
-    <div class="home-menu-content">
-      <a class="pure-menu-heading" href="/">Happy Thai</a>
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item"><a href="/prices.html" class="pure-menu-link">Prices</a></li>
-        <li class="pure-menu-item"><a href="/about.html" class="pure-menu-link">About</a></li>
-        <li class="pure-menu-item"><a href="/contact.html" class="pure-menu-link">Contact</a></li>
-      </ul>
-    </div>
-  </div> %>
-
   <%= yield %>
 
   <div class="footer l-box is-center">
     <div class="social-links">
+      <% link_to 'https://www.youtube.com/channel/UCZYUxl19-Zf_eYn_8Lmfizw' do %>
+        <i class="fa fa-youtube-square"></i>
+      <% end %>
       <% link_to 'https://twitter.com/happythailife' do %>
         <i class="fa fa-twitter-square"></i>
       <% end %>
