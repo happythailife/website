@@ -327,6 +327,10 @@ a.pure-button-primary {
     color: #00A4B0;
 }
 
+.top-border {
+    border-top: 3px solid #00A4B0;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some

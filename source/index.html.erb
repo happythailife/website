@@ -73,7 +73,14 @@ layout: "page"
     </div>
   </div>
 
-  <div class='content'>
+  <div class="content" style="padding-bottom: 1em;">
+    <h2>Latest from the Blog</h2>
+    <% blog.articles[0..0].each do |article| %>
+      <%= partial 'blog_article_summary', locals: { article: article } %>
+    <% end %>
+  </div>
+
+  <div class='content top-border'>
     <%= partial 'contact_form' %>
   </div>
 </div>
