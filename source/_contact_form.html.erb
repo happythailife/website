@@ -1,40 +1,20 @@
-<div class="pure-g">
-  <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-    <form class="pure-form pure-form-stacked" data-netlify="true" name="contact">
-      <fieldset>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Name">
+<form class="" data-netlify="true" name="contact">
+  <fieldset>
+    <label for="name">
+      Name
+      <input id="name" name="name" type="text" placeholder="Name">
+    </label>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Email">
+    <label for="email">
+      Email
+      <input id="email" name="email" type="email" placeholder="Email">
+    </label>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" style="width:100%;"></textarea>
+    <label for="message">
+      Message
+      <textarea id="message" name="message" style="width:100%;"></textarea>
+    </label>
 
-        <button type="submit" class="pure-button">Send</button>
-      </fieldset>
-    </form>
-  </div>
-
-  <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-    <h4>Contact Mam</h4>
-    <p>If you have any questions about availability or pricing please don't hesitate to contact me using the form on this page or any of the social media platforms listed below.
-    </p>
-
-    <h4>Social Media</h4>
-    <div class="social-links">
-      <% link_to 'https://www.youtube.com/channel/UCZYUxl19-Zf_eYn_8Lmfizw' do %>
-        <i class="fa fa-youtube-square"></i>
-      <% end %>
-      <% link_to 'https://twitter.com/happythailife' do %>
-        <i class="fa fa-twitter-square"></i>
-      <% end %>
-      <% link_to 'https://www.facebook.com/happythailife' do %>
-        <i class="fa fa-facebook-square"></i>
-      <% end %>
-      <% link_to 'https://www.instagram.com/happythailife' do %>
-        <i class="fa fa-instagram"></i>
-      <% end %>
-    </div>
-  </div>
-</div>
+    <button type="submit" class="button icon solid fa-arrow-circle-right">Send</button>
+  </fieldset>
+</form>
