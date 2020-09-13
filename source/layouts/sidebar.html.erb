@@ -1,0 +1,39 @@
+<% wrap_layout :page do %>
+  <div id="main-wrapper">
+    <div class="container">
+      <div class="row gtr-200">
+        <div class="col-8 col-12-medium">
+          <div id="content">
+            <%= yield %>
+          </div>
+        </div>
+
+        <div class="col-4 col-12-medium">
+          <div id="sidebar">
+            <section>
+              <h3>Hey there, I'm Mam</h3>
+              <p>
+                I'm an <strong>online Thai teacher</strong> currently living in Chiang Mai, Thailand.
+                If you don't find what you are after on this page use any other methods below to get in touch!</p>
+              <ul class="style2">
+                <li><a target="_blank" class="icon brands fa-twitter" href="https://twitter.com/happythailife"><span class="label"></span> Twitter</a></li>
+                <li><a target="_blank" class="icon brands fa-facebook-f" href="https://www.facebook.com/happythailife"><span class="label"></span> Facebook</a></li>
+                <li><a target="_blank" class="icon brands fa-instagram" href="https://www.instagram.com/happythailife"><span class="label"></span> Instagram</a></li>
+                <li><a target="_blank" class="icon brands fa-mailchimp" href="mailto:mam@happythai.life"><span class="label"></span> Email</a></li>
+              </ul>
+
+              <% unless current_page.path[/free/] %>
+                <p>
+                  If you are first time student and want to chat or try out a lesson why not book your first lesson for free
+                  using the button below!</p>
+                <footer>
+                  <a class="button icon solid fa-arrow-circle-right" href="/free.html">Free Lesson</a>
+                </footer>
+              <% end %>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

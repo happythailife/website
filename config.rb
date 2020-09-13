@@ -5,6 +5,9 @@
 #   prefix.browsers = "last 2 versions"
 # end
 
+# A Middleman extension for indicating a current (active) link using aria-current.
+activate :aria_current
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

@@ -27,11 +27,11 @@
       <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="current"><a href="/index.html">Welcome</a></li>
+          <li><%= current_link_to "Welcome", "/index.html" %></li>
           <!--<li><a href="left-sidebar.html">Blog</a></li>-->
-          <li><a href="/prices.html">Prices</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><%= current_link_to "Prices", "/prices.html" %></li>
+          <li><%= current_link_to "About", "/about.html" %></li>
+          <li><%= current_link_to "Contact", "/contact.html" %></li>
         </ul>
       </nav>
     </header>
@@ -52,8 +52,8 @@
               <li><a href="/prices.html">Prices</a></li>
               <li><a href="/about.html">About</a></li>
               <li><a href="/contact.html">Contact</a></li>
-              <li><a href="#">Book Now</a></li>
-              <li><a href="#">Family Lessons</a></li>
+              <li><a href="/book.html">Book Now</a></li>
+              <li><a href="/family.html">Family Lessons</a></li>
               <li><a href="#">Corporate Lessons</a></li>
             </ul>
           </section>
@@ -63,9 +63,10 @@
           <section id="xsocial-media" class="widget contact last">
             <h3>Social Media</h3>
             <ul>
-              <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-              <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-              <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+              <li><a class="icon brands fa-twitter" href="https://twitter.com/happythailife"><span class="label">Twitter</span></a></li>
+              <li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/happythailife"><span class="label">Facebook</span></a></li>
+              <li><a class="icon brands fa-youtube" href="https://www.youtube.com/channel/UCZYUxl19-Zf_eYn_8Lmfizw"><span class="label">Youtube</span></a></li>
+              <li><a class="icon brands fa-instagram" href="https://www.instagram.com/happythailife"><span class="label">Instagram</span></a></li>
             </ul>
           </section>
         </div>
